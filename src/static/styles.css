@@ -85,12 +85,15 @@ section h3 {
 }
 
 .participants-list {
-  list-style: disc inside;
+  list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.participants-list li {
+.participant-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background: linear-gradient(180deg, #ffffff, #fbfdff);
   border: 1px solid #eef3ff;
   padding: 8px 10px;
@@ -100,8 +103,22 @@ section h3 {
   color: #263238;
 }
 
-.participants-list li:last-child {
+.participant-item:last-child {
   margin-bottom: 0;
+}
+
+.participant-remove {
+  border: none;
+  background: transparent;
+  color: #c62828;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 0 4px;
+  line-height: 1;
+}
+
+.participant-remove:hover {
+  color: #b71c1c;
 }
 
 .form-group {
